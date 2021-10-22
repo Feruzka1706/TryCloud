@@ -129,6 +129,8 @@ public class FilesPage {
     }
 
     public void chooseAction(String action) {
+
+
         BrowserUtil.waitFor(2);
         Driver.getDriver().findElement(By.xpath("//li//span[contains(normalize-space(.),'"+action+"')]")).click();
     }

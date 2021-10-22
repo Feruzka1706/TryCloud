@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target"
         },
         dryRun = true
-         , tags = "@us_06"
+         , tags = "@us_07"
 )
 public class TestRunner {
 }

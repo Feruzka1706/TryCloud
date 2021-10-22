@@ -22,6 +22,14 @@ public class FileActionsStepDefs {
 
     @When("user choose {string} option")
     public void user_choose_option(String action) {
+        /*
+        if(action.equals("Delete")){
+            filesPage.chooseToDelete(action);
+
+        }
+
+         */
+
         filesPage.chooseAction(action);
     }
 
@@ -57,6 +65,22 @@ public class FileActionsStepDefs {
         System.out.println("expectedName = " + expectedName);
 
         Assert.assertFalse(allFavoriteName.contains(expectedName));
+
+    }
+    /**
+     * Delete
+     */
+
+    @Then("Verify the deleted file is displayed on the page.")
+    public void verify_the_deleted_file_is_displayed_on_the_page() {
+
+
+        List<String> actualDeletedFileNames = BrowserUtil.getElementsText(filesPage.deletedFileNames);
+        System.out.println("actualDeletedFileNames = " + actualDeletedFileNames);
+
+        System.out.println("expectedName = " + expectedName);
+
+        Assert.assertTrue(actualDeletedFileNames.contains(expectedName));
 
     }
 
