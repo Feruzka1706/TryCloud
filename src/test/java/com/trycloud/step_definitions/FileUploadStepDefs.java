@@ -35,4 +35,9 @@ public class FileUploadStepDefs {
 
         Assert.assertTrue(sizeBeforeAdd+1==sizeAfterAdd);
     }
+
+    @When("user choose a folder from the page")
+    public void user_choose_a_folder_from_the_page() {
+
+    }
 }
