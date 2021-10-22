@@ -113,6 +113,11 @@ public class FilesPage {
 
 
     public String chooseRandomFileInFilesPage() {
+
+        /**
+         * allActionsInFiles  is List  0-----size-1
+         * 1-----size
+         */
         int number = allActionsInFiles.size();
         String expectedFileName = Driver.getDriver().findElement(By.xpath("(//span[@class='nametext'])["+number+"]/span")).getText();
         System.out.println(expectedFileName);
