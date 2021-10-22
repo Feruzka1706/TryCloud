@@ -38,4 +38,26 @@ public class FileActionsStepDefs {
 
         Assert.assertTrue(favoritesListNames.contains(expectedName));
     }
+
+    /**
+     * Remove From Favorites
+     *
+     */
+
+    @When("user click action-icon from any file on the page to remove")
+    public void user_click_action_icon_from_any_file_on_the_page_to_remove() {
+         expectedName = filesPage.removeFavorite();
+
+
+    }
+    @Then("Verify that the file is removed from Favorites sub-module’s table")
+    public void verify_that_the_file_is_removed_from_favorites_sub_module_s_table() {
+        List<String> allFavoriteName = BrowserUtil.getElementsText(filesPage.allFileNamesInFavorites);
+        System.out.println("allFavoriteName = " + allFavoriteName);
+        System.out.println("expectedName = " + expectedName);
+
+        Assert.assertFalse(allFavoriteName.contains(expectedName));
+
+    }
+
 }
