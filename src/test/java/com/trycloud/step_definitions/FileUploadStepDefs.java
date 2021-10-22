@@ -38,6 +38,6 @@ public class FileUploadStepDefs {
 
     @When("user choose a folder from the page")
     public void user_choose_a_folder_from_the_page() {
-
+        filesPage.allFolders.get(0).click();
     }
 }
