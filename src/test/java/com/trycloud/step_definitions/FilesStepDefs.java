@@ -35,7 +35,7 @@ public class FilesStepDefs {
 
     @When("user click the top left checkbox of the table")
     public void user_click_the_top_left_checkbox_of_the_table() {
-        System.out.println("filesPage.allCboxInFiles = " + filesPage.allCboxInFiles);
+        System.out.println("filesPage.allCboxInFiles = " + filesPage.allCboxInFiles.size());
 
         /**
          * optional
@@ -44,7 +44,7 @@ public class FilesStepDefs {
             filesPage.createFolder();
         }
 
-        System.out.println("filesPage.allCboxInFiles = " + filesPage.allCboxInFiles);
+        System.out.println("filesPage.allCboxInFiles = " + filesPage.allCboxInFiles.size());
 
         filesPage.selectAllCbox.click();
 
