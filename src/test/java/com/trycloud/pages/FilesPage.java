@@ -144,13 +144,6 @@ public class FilesPage {
         return expectedFileName;
     }
 
-    public void uploadFile(String fileName){
-        addIcon.click();
-        uploadFile.sendKeys((System.getProperty("user.dir") + "\\src\\test\\resources\\uploadedFiles\\"+fileName));
-        waitUntilProgressbarDisappear();
-        BrowserUtil.waitFor(3);
-    }
-
     public void waitUntilProgressbarDisappear() {
         try {
             WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 1000);

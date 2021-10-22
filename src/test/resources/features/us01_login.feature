@@ -14,6 +14,9 @@ Feature: As a user, I should be able to login to TryCloud app
       | User39   | Userpass123 |
       | User65   | Userpass123 |
 
+
+
+
     #submitType
 
   Scenario Outline: verify user login fail with invalid credentials "<username>"
@@ -26,6 +29,7 @@ Feature: As a user, I should be able to login to TryCloud app
       | User9    | Wrong       | Wrong username or password. |
       | Wrong    | Userpass123 | Wrong username or password. |
       | Wrong    | Wrong       | Wrong username or password. |
+
 
 
     #validationMessage
