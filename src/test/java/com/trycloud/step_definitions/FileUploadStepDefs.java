@@ -17,7 +17,7 @@ public class FileUploadStepDefs {
 
     @When("user  uploads file with upload file option")
     public void user_uploads_file_with_upload_file_option() {
-        String path="/Users/soyturk/IdeaProjects/B23/OfficeHours/tryCloudUIAutomation/src/test/resources/files/us_01.png";
+        String path="/Users/soyturk/IdeaProjects/B23/OfficeHours/tryCloudUIAutomation/src/test/resources/files/pluginForParallel.png";
 
         //filesPage.createRandomFile();
 
