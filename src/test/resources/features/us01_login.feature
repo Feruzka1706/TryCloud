@@ -1,4 +1,4 @@
-@us_01@reg
+@us_01
 Feature: As a user, I should be able to login to TryCloud app
 
   Background:

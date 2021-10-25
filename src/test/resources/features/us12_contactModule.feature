@@ -1,4 +1,4 @@
-@us-12@reg
+@us-12
 Feature: As a user, I should be able to access to Contacts module.
 
   Background:
