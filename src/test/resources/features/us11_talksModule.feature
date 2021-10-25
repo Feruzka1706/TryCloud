@@ -1,4 +1,4 @@
-@us_11
+@us_11@reg
 Feature: As a user, I should be able to access to Talks module.
 
   Background:

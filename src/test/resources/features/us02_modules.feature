@@ -1,4 +1,4 @@
-@us_02
+@us_02@reg
 Feature: As a user, I should be access all the main modules of the app.
 
   Background:
