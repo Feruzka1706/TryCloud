@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
         glue = "com/trycloud/step_definitions",
         plugin = {"html:target/cucumber.html",
                 "rerun:target/rerun.txt",
+                "json:target/cucumber.json",
                 "me.jvt.cucumber.report.PrettyReports:target"
         },
         dryRun = false
